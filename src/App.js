@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import chunky from './chunky.png';
 import './App.css';
 
 class App extends Component {
@@ -7,18 +7,17 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
+          <div className="background-container"> </div>
+          <div className="content">
+          <div className="flex-container">
+          <img src={chunky} className="ChunkyDog" alt="chunky" />
+          <img src={chunky} className="ChunkyDog" alt="chunky" />
+          </div>
           <p>
-            Hello from Render!
+            Kosti was here!
           </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
+
+          </div>
         </header>
       </div>
     );
